@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HostoNew TV — Santé & Information</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="shortcut icon" href="https://hostolink.com/hostolink-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+</head>
+<body>
+
+
+<!-- BULLES FOND -->
+<div class="bulles-bg" aria-hidden="true">
+  <div class="bulle"></div>
+  <div class="bulle"></div>
+  <div class="bulle"></div>
+  <div class="bulle"></div>
+  <div class="bulle"></div>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <div class="logo-cercle">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.5 14.5h-3v-4h-2V11h2V8h3v3h2v1.5h-2v4z"/></svg>
+    </div>
+    <span>HostoNew TV</span>
+  </div>
+  <div class="nav-links">
+    <a href="#features">Fonctionnalités</a>
+    <a href="#screens">Aperçu</a>
+    <a href="#chef">Équipe</a>
+    <a href="#download" class="nav-cta">Télécharger</a>
+  </div>
+  <button id="theme-toggle" style="
+  background:none; border:2px solid rgba(18,138,95,.3);
+  border-radius:100px; padding:7px 16px; cursor:pointer;
+  font-size:.82rem; font-weight:600; color:var(--vert);
+  display:flex; align-items:center; gap:7px; transition:all .25s;
+" aria-label="Changer de thème">
+  <span id="theme-icon">🌙</span>
+  <span id="theme-label">Sombre</span>
+</button>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="hero">
+  <div class="hero-badge">
+    <div class="dot"></div>
+    Application mobile disponible
+  </div>
+  <h1>L'information <span>santé</span> de toute l'Afrique</h1>
+  <p class="hero-sub">
+    Suivez des émissions médicales en direct, accédez à des contenus fiables rédigés par des professionnels de santé, et restez informé partout sur le continent.
+  </p>
+  <div class="hero-actions">
+    <a href="#download" class="btn-primary">
+      <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+      Télécharger l'APK
+    </a>
+    <a href="#screens" class="btn-secondary">Voir l'application</a>
+  </div>
+  <div class="hero-phone">
+    <div class="phone-frame">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <div class="ps-logo">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.5 14.5h-3v-4h-2V11h2V8h3v3h2v1.5h-2v4z"/></svg>
+        </div>
+        <div class="ps-title">HostoNew TV</div>
+        <div class="ps-sub">Santé &amp; Information Afrique</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="features-header reveal">
+      <div class="section-label">Fonctionnalités</div>
+      <h2 class="section-title">Tout ce dont vous <span>avez besoin</span></h2>
+      <p class="section-desc">Une plateforme complète pensée pour rendre l'information santé accessible à tous.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal" style="animation-delay:.1s">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <h3>Contenu par pays</h3>
+        <p>Sélectionnez votre pays et accédez à des informations de santé adaptées à votre contexte local et régional.</p>
+      </div>
+      <div class="feature-card reveal" style="animation-delay:.2s">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"/></svg>
+        </div>
+        <h3>Lives &amp; Émissions</h3>
+        <p>Regardez des émissions médicales en direct avec des experts. Posez vos questions en temps réel.</p>
+      </div>
+      <div class="feature-card reveal" style="animation-delay:.3s">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 1 1 0 10A5 5 0 0 1 12 2zm0 12c5.33 0 8 2.67 8 4v2H4v-2c0-1.33 2.67-4 8-4z"/></svg>
+        </div>
+        <h3>Experts certifiés</h3>
+        <p>Tous les contenus sont produits ou validés par des professionnels de santé qualifiés en Afrique francophone.</p>
+      </div>
+      <div class="feature-card reveal" style="animation-delay:.4s">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92c0-1.61-1.31-2.92-2.92-2.92z"/></svg>
+        </div>
+        <h3>Partage facile</h3>
+        <p>Partagez les contenus importants avec vos proches. Diffusez l'information santé autour de vous.</p>
+      </div>
+      <div class="feature-card reveal" style="animation-delay:.5s">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+        </div>
+        <h3>Alertes santé</h3>
+        <p>Recevez des notifications sur les alertes épidémiques et les actualités médicales importantes pour votre zone.</p>
+      </div>
+      <div class="feature-card reveal" style="animation-delay:.6s">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+        </div>
+        <h3>Replay disponible</h3>
+        <p>Manqué une émission ? Retrouvez tous les replays et rattrappez-vous à votre rythme, hors ligne ou en ligne.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DÉFILÉ SCREENS -->
+<section class="screens-section" id="screens">
+  <div class="screens-header reveal">
+    <div class="section-label">Aperçu</div>
+    <h2 class="section-title">L'application en <span>images</span></h2>
+    <p class="section-desc" style="margin:16px auto 0">Découvrez une interface soignée, fluide et pensée pour vous.</p>
+  </div>
+
+  <!-- Ligne 1 : gauche → droite -->
+  <div class="marquee-wrapper">
+    <div class="marquee-track ltr" id="track-ltr">
+      <!-- Les cartes sont dupliquées en JS pour l'infini -->
+    </div>
+
+    <!-- Ligne 2 : droite → gauche -->
+    <div class="marquee-track rtl" id="track-rtl">
+    </div>
+  </div>
+</section>
+
+<!-- CHEF DE PROJET -->
+<section class="chef-section" id="chef">
+  <div class="container">
+    <div class="chef-inner">
+      <div class="chef-content reveal">
+        <div class="section-label">Direction du projet</div>
+        <h2 class="section-title">Une vision, <span>une mission</span></h2>
+        <p class="section-desc">
+          HostoNew TV est né d'une conviction forte : chaque Africain mérite un accès simple et fiable à l'information médicale de qualité. Ce projet porte cette mission avec exigence et passion.
+        </p>
+        <div class="chef-stats">
+          <div class="stat-box">
+            <div class="sb-num">54+</div>
+            <div class="sb-label">Pays africains ciblés</div>
+          </div>
+          <div class="stat-box">
+            <div class="sb-num">100%</div>
+            <div class="sb-label">Contenu validé médicalement</div>
+          </div>
+          <div class="stat-box">
+            <div class="sb-num">Live</div>
+            <div class="sb-label">Émissions en direct</div>
+          </div>
+          <div class="stat-box">
+            <div class="sb-num">Free</div>
+            <div class="sb-label">Accès gratuit à l'essentiel</div>
+          </div>
+        </div>
+      </div>
+      <div class="chef-photo-wrap reveal">
+        <div class="chef-photo">
+          <img src="https://res.cloudinary.com/dhrrk7vsd/image/upload/v1771602029/hostonewstv_web_assets/1_assets_public/dr_qo2wwq.jpg_teaftw.jpg" alt="" >
+        </div>
+        <div class="chef-badge">
+          <div class="cb-name">Mr Konan Allah Aimé</div>
+          <div class="cb-name">Chef de Projet</div>
+          <div class="cb-role">HostoNew TV &mdash; Direction Générale</div>
+          <div class="di-links">
+              <a href="https://prevos.hostolink.com/" target="_blank">prevos | </a>
+              <a href="https://hostolink.com/" target="_blank">hostolink</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TÉLÉCHARGEMENT -->
+<section class="download-section" id="download">
+  <div class="container">
+    <div class="section-label" style="color:rgba(255,255,255,.6)" class="reveal">Disponible maintenant</div>
+    <h2 class="section-title reveal">Téléchargez <span style="color:rgba(255,255,255,.8)">HostoNew TV</span></h2>
+    <p class="section-desc reveal">Disponible sur Android. Gratuit, sans publicité, sans engagement.</p>
+    <a href="/statiques/hostonewstv.apk" download class="btn-download reveal">
+      <svg viewBox="0 0 24 24"><path d="M17.523 15.341l-4.184 2.415a2.496 2.496 0 01-2.498 0L6.477 15.34A2.5 2.5 0 015.24 13.17V8.83a2.5 2.5 0 011.237-2.17l4.184-2.415a2.496 2.496 0 012.498 0l4.184 2.415A2.5 2.5 0 0118.617 8.83v4.34a2.5 2.5 0 01-1.094 2.171z"/></svg>
+      Télécharger l'APK Android
+    </a>
+    <p class="download-meta">Fichier APK · Android 6.0+ · Version 1.0.0</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="fb-logo">
+          <div class="lc">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.5 14.5h-3v-4h-2V11h2V8h3v3h2v1.5h-2v4z"/></svg>
+          </div>
+          <span>HostoNew TV</span>
+        </div>
+        <p>Votre plateforme d'actualités santé en continu. Information médicale fiable pour toute l'Afrique francophone.</p>
+
+        <!-- Carte développeur -->
+        <div class="dev-card">
+          <div class="dev-avatar">
+            <img src="https://res.cloudinary.com/dhrrk7vsd/image/upload/v1771518393/hostonewstv_web_assets/3_utilisateur_spectateurs/2_spectateur_update_1771518392203/kmztygbhgrw1e6zwrgt9.jpg" alt="" >
+          </div>
+          <div class="dev-info">
+              <div class="di-name">N'Guessan</div>
+            <div class="di-name">Développeur principal</div>
+
+            <div class="di-role">Flutter · Firebase · UI/UX</div>
+            <div class="di-links">
+              <a href="https://github.com/debady" target="_blank">Portfolio</a>
+              <a href="https://github.com/debady" target="_blank">GitHub</a>
+              <a href="https://github.com/debady" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Application</h4>
+        <ul>
+          <li><a href="#features">Fonctionnalités</a></li>
+          <li><a href="#screens">Aperçu</a></li>
+          <li><a href="#download">Télécharger</a></li>
+          <li><a href="#">Nouveautés</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Informations</h4>
+        <ul>
+          <li><a href="#chef">Équipe</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">Conditions d'utilisation</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Miniatures écrans footer -->
+    <div class="footer-screens">
+      <h4>Captures d'écran</h4>
+      <div class="footer-screens-grid" id="footer-screens-grid">
+        <!-- Rempli dynamiquement via JS avec les URLs que vous fournirez -->
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 HostoNew TV. Tous droits réservés.</p>
+      <span class="made">Fait avec soin pour l'Afrique</span>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
